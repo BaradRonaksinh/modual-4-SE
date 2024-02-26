@@ -20,7 +20,6 @@ class bank{
 	public:
 		char name[20], type_of_acc[1];
 		int acc_no,balance,amount;
-		
 	
 		void get_data(){
 			cout<<"\n Enter Name: ";
@@ -49,7 +48,6 @@ class bank{
 			}else{
 				cout<<"\n You Enter the higher amount to your bank account deposited...";
 			}
-			
 		}
 };
 
@@ -74,8 +72,4 @@ int main(){
 		default:
 			cout<<"\n Please chack again your entry!!";
 	}
-	
-	
-	
-	
 }

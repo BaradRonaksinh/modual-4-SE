@@ -6,8 +6,9 @@ class shape{
 		virtual void area() = 0;
 };
 class react:public shape{
+	int a, b,areaOf;
 	public:
-		int a, b,areaOf;
+		
 		void area(){
 			cout<<"\n enter value of width and height:";
 			cin>>a;
@@ -18,8 +19,9 @@ class react:public shape{
 };
 
 class circle:public shape{
+	int r, area;
 	public:
-		int r, area;
+		
 		void area(){
 			cout<<"\n enter radius:";
 			cin>>r;
@@ -30,8 +32,9 @@ class circle:public shape{
 };//baki he
 
 class square:public shape{
+	int a, area;
 	public:
-		int a, area;
+		
 		void area(){
 			cout<<"\n Enter length";
 			cin>>a;
@@ -41,8 +44,12 @@ class square:public shape{
 };
 
 int main(){
-	circle a1;
-	a1.area();
-	rectangle r1;
-	r1.
+	circle c;
+	c.area();
+	react r;
+	r.area();
+	square s;
+	s.area();
+	
+//	return 0;
 }

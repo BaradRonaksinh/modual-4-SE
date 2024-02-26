@@ -7,7 +7,7 @@ using namespace std;
 
 class Circle{
 	private:
-		int raduis;
+		int raduis ,pai;
 		
 	public:
 		void get_data(){
@@ -17,7 +17,7 @@ class Circle{
 		
 		void areaOFcircle(){
 			pai = 3.14;
-			int area = pai * r * r;
+			int area = pai * raduis * raduis;
 			cout<< "The area of Circle is:"<<area;
 		}
 		

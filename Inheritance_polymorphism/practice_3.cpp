@@ -12,10 +12,38 @@ class person{
 	public:
 		void get_data(){
 			cout<<"\nEnter name:";
-			cin>>string;
+			cin>>name;
 			
 			cout<<"\nEnter age:";
 			cin>>age;
 		}
 };
-class student
+class student{
+	private:
+		int per;
+	public:
+		
+		void std_per(){
+			cout<<"\n Enter student percentage:";
+			cin>>per;
+		}
+};
+class teacher:public person, public student{
+	private:
+		int salary;
+	public:
+		
+		void tech_sal(){
+			cout<<"\n Enter Teacher Name:"<<name;
+			cout<<"\n Enter teacher salary:";
+			cin>>salary;
+		}
+};
+
+int main(){
+	teacher t;
+	t.get_data();
+	t.std_per();
+	t.tech_sal();
+}
+
